@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+body{
+	font-family: "Microsoft Yahei";
+	font-size: 30px;
+	color: #4c5844;
+	background: url(../images/cm.jpg) no-repeat top;
+	background-size: 100%;
+}
+li{
+	color: #fff;
+}
+#centerbox{
+	text-align:left;
+	width:30%;
+	padding-top:15px;
+	margin:50px auto;
+	background:rgba(255,255,255,0.3);
+}
+div{
+	width:49%;
+	height:200px;
+	border:2px red solid;
+}
+#div1{float:left;}
+#div2{float:right;}
