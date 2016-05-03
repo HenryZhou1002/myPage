@@ -3,7 +3,8 @@ body{
 	font-family: "Microsoft Yahei";
 	font-size: 30px;
 	color: #4c5844;
-	background: url(../images/cm.jpg) no-repeat top;
+	background-color: #456732;
+	background: url(/cm.jpg) no-repeat top;
 	background-size: 100%;
 }
 li{
@@ -11,13 +12,13 @@ li{
 }
 #centerbox{
 	text-align:left;
-	width:30%;
+	width:50%;
 	padding-top:15px;
 	margin:50px auto;
 	background:rgba(255,255,255,0.3);
 }
 div{
-	width:49%;
+	width:70%;
 	height:200px;
 	border:2px red solid;
 }

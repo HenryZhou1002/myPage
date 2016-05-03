@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>这是一个错误跳转</title>
+
+这里的错误是由除法分母为0所导致的。
 </head>
 <body>
 

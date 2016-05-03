@@ -31,11 +31,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   
   <%@include file="/nav2.html" %>
+  <br/>
   
   <!-- class=“ ** ”  这里一定要加上双引号 -->
   <jsp:useBean id="student" scope="page" class="mine.Student"/>
-  <%=student.getName() %><br>
+  <br>
+  	这是jsp的输出结果<br>
+  修改名字之前的：<%=student.getName() %><br>
   <%student.setName("will"); %>
+  修改完了名字后：<%=student.getName() %><br>
   
   
   
@@ -48,14 +52,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	</form>
   	
   	<%! int a = 5, b = 10;; %>
-  	<%=a %>
-  	
+  	a = <%=a %>
+  	<br/>
   	Now time is:<% Date d = new java.util.Date(); 
   		out.println(d);
-  		out.println(a);
   	%>
   	<br>
 
+	循环5次输出“你好”。<br>
   	<% int a = 5;
   		for(int i = 0; i<a; i++)
   		{
@@ -68,12 +72,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	
   	<%@page errorPage="ErrorPage.jsp" %>
   	<%! int i = 0; %>
-  	<%=7/1 %>
+  	7 / 1 = <%=7/1 %>
   	errorPage.jsp:<%@page isErrorPage="true" %>
   	<%=exception %>
-  	
-  	<%@include file="/navbar.html" %>
-  	<!-- 本页面的其他内容 -->
+
   	
   	<table summary="我是摘要">
 	<caption>我是表头的标题</caption>
