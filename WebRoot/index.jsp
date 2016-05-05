@@ -37,12 +37,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <jsp:useBean id="student" scope="page" class="mine.Student"/>
   <br>
   	这是jsp的输出结果<br>
-  修改名字之前的：<%=student.getName() %><br>
-  <%student.setName("will"); %>
-  修改完了名字后：<%=student.getName() %><br>
+  	修改名字之前的：<%=student.getName() %><br>
+  	<%student.setName("will"); %>
+  	修改完了名字后：<%=student.getName() %><br>
   
-  
-  
+  <jsp:setProperty property="name" name="student" value = "ZZZ"/>
+  <!-- name是前面的Bean的id值，property是该对象的属性，value是将要改变的属性的值 -->
+  	使用setProperty进行设置之后的name值：<%=student.getName() %>
+  	<br>
+  	使用getProperty动作获得的值:
+  <jsp:getProperty name="student" property="classno"/>
+  <%String name = request.getParameter("name");
+  out.println(name); %>
+  <!-- 输出值为null -->
     <h1>这是第一个servlet小程序</h1>
     
     <!-- 获得一个请求 -->
